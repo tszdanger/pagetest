@@ -1,0 +1,223 @@
+- year: 2026
+  title: "JSProtect: A Scalable Obfuscation Framework for Mini-Games in WeChat"
+  authors: "Zhihao Li, Chaozheng Wang, <strong>Zongjie Li</strong>*, Xinyong Peng, Zelin Su, Qun Xia, Haochuan Lu, Ting Xiong, Man Ho Lam, Shuzheng Gao, Yuchong Xie, Cuiyun Gao, Shuai Wang, Yuetang Deng, Huafeng Ma"
+  venue: "ACM International Conference on the Foundations of Software Engineering, Industry Track (<strong>FSE Indus 2026</strong>)"
+  venue_short: "FSE"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2026
+  title: "Cascaded Code Editing: Large-Small Model Collaboration for Effective and Efficient Code Editing"
+  authors: "Chaozheng Wang, Zezhou Yang, Shuzheng Gao, Cuiyun Gao, <strong>Zongjie Li</strong>, Yichen Li, Ting Peng, Hailiang Huang, Yuetang Deng, Michael R. Lyu"
+  venue: "ACM International Conference on the Foundations of Software Engineering (<strong>FSE 2026</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "FSE"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2026
+  title: "GuidedBench: Measuring and Mitigating the Evaluation Discrepancies of In-the-wild LLM Jailbreak Methods"
+  authors: "Ruixuan Huang, Xunguang Wang, <strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang"
+  venue: "International Conference on Learning Representations (<strong>ICLR 2026</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "ICLR"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2026
+  title: "SoK: Evaluating Jailbreak Guardrails for Large Language Models"
+  authors: "Xunguang Wang, Zhenlan Ji, Wenxuan Wang, <strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang"
+  venue: "IEEE Symposium on Security and Privacy (<strong>S&P 2026</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "S&P"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2026
+  title: "EAMET: Robust Massive Model Editing via Embedding Alignment Optimization"
+  authors: "Yanbo Dai, Zhenlan Ji, <strong>Zongjie Li</strong>*, Shuai Wang"
+  venue: "International Conference on Learning Representations (<strong>ICLR 2026</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "ICLR"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2026
+  title: "IP Leakage Attacks Targeting LLM-Based Multi-Agent Systems"
+  authors: "Liwen Wang, Wenxuan Wang, Shuai Wang, <strong>Zongjie Li</strong>*, Zhenlan Ji, Zongyi Lyu, Daoyuan Wu, Shing-Chi Cheung"
+  venue: "USENIX Security Symposium (<strong>USENIX Security 2026</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "USENIX"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2026
+  title: "Guardrail: Automated Integrity Constraint Synthesis From Noisy Data"
+  authors: "Pingchuan Ma, Zhaoyu Wang, Zhenlan Ji, <strong>Zongjie Li</strong>, Ao Sun, Shuai Wang"
+  venue: "ACM SIGMOD Conference (<strong>SIGMOD 2026</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "SIGMOD"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2025
+  title: "Differentiation-Based Extraction of Proprietary Data from Fine-tuned LLMs"
+  authors: "<strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang, Zhendong Su"
+  venue: "ACM SIGSAC Conference on Computer and Communications Security (<strong>CCS 2025</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "CCS"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2025
+  title: "API-guided Dataset Synthesis to Finetune Large Code Models"
+  authors: "<strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang, Zhendong Su"
+  venue: "Proceedings of the ACM on Programming Languages (<strong>OOPSLA 2025</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "OOPSLA"
+  paper_url: "https://dl.acm.org/doi/10.1145/3720449"
+  location_date: "Singapore, 2025"
+
+- year: 2025
+  title: "Measuring and Augmenting Large Language Models for Solving Offensive Security Challenges"
+  authors: "Zimo Ji, Daoyuan Wu, Wenyuan Jiang, Pingchuan Ma, <strong>Zongjie Li</strong>, Shuai Wang"
+  venue: "ACM SIGSAC Conference on Computer and Communications Security (<strong>CCS 2025</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "CCS"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2025
+  title: "Low-Cost and Comprehensive Non-textual Input Fuzzing with LLM-Synthesized Input Generators"
+  authors: "Kunpeng Zhang, <strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang, Xin Xia"
+  venue: "USENIX Security Symposium (<strong>USENIX Security 2025</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "USENIX"
+  paper_url: "https://arxiv.org/abs/2501.19282"
+  location_date: ""
+
+- year: 2025
+  title: "SelfDefend: LLMs Can Defend Themselves against Jailbreaking in a Practical Manner"
+  authors: "Xunguang Wang, Daoyuan Wu, Zhenlan Ji, <strong>Zongjie Li</strong>, Pingchuan Ma, Shuai Wang, Yingjiu Li, Yang Liu, Ning Liu, Juergen Rahmel"
+  venue: "USENIX Security Symposium (<strong>USENIX Security 2025</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "USENIX"
+  paper_url: "https://arxiv.org/abs/2406.05498"
+  location_date: ""
+
+- year: 2025
+  title: "Reeq: Testing and Mitigating Ethically Inconsistent Suggestions of Large Language Models with Reflective Equilibrium"
+  authors: "Pingchuan Ma, Zhaoyu Wang, <strong>Zongjie Li</strong>, Zhenlan Ji, Ao Sun, Juergen Rahmel, Shuai Wang"
+  venue: "ACM Transactions on Software Engineering and Methodology (<strong>TOSEM 2025</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "TOSEM"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2025
+  title: "DecLLM: LLM-Augmented Recompilable Decompilation for Enabling Programmatic Use of Decompiled Code"
+  authors: "Wai Kin Wong, Daoyuan Wu, Huaijin Wang, <strong>Zongjie Li</strong>, Zhibo Liu, Shuai Wang, Qiyi Tang, Sen Nie, Shi Wu"
+  venue: "ACM SIGSOFT International Symposium on Software Testing and Analysis (<strong>ISSTA 2025</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "ISSTA"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2025
+  title: "Causality-Aided Evaluation and Explanation of Large Language Model-based Code Generation"
+  authors: "Zhenlan Ji, Pingchuan Ma, <strong>Zongjie Li</strong>, Zhaoyu Wang, Shuai Wang"
+  venue: "ACM SIGSOFT International Symposium on Software Testing and Analysis (<strong>ISSTA 2025</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "ISSTA"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2024
+  title: "On the Feasibility of Specialized Ability Extracting for Large Language Code Models"
+  authors: "<strong>Zongjie Li</strong>, Chaozheng Wang, Pingchuan Ma, Chaowei Liu, Shuai Wang, Daoyuan Wu, Cuiyun Gao, Yang Liu"
+  venue: "IEEE/ACM International Conference on Software Engineering (<strong>ICSE 2024</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "ICSE"
+  paper_url: "https://arxiv.org/pdf/2303.03012.pdf"
+  location_date: "Lisbon, Portugal, 2024"
+
+- year: 2024
+  title: "BinAug: Enhancing Binary Similarity Analysis with Low-Cost Input Repairing"
+  authors: "Wong Wai Kin, Huaijin Wang, <strong>Zongjie Li</strong>, Shuai Wang"
+  venue: "IEEE/ACM International Conference on Software Engineering (<strong>ICSE 2024</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "ICSE"
+  paper_url: "#"
+  location_date: "Lisbon, Portugal, 2024"
+
+- year: 2024
+  title: "Split and Merge: Aligning Position Biases in Large Language Model based Evaluators"
+  authors: "<strong>Zongjie Li</strong>, Chaozheng Wang, Pingchuan Ma, Daoyuan Wu, Shuai Wang, Cuiyun Gao, Yang Liu"
+  venue: "Conference on Empirical Methods in Natural Language Processing (<strong>EMNLP 2024</strong>)"
+  venue_short: "EMNLP"
+  paper_url: "https://arxiv.org/abs/2310.01432"
+  location_date: "Miami, FL, USA, 2024"
+
+- year: 2023
+  title: "Protecting Intellectual Property of Large Language Model-Based Code Generation APIs via Watermarks"
+  authors: "<strong>Zongjie Li</strong>, Chaozheng Wang, Shuai Wang, Cuiyun Gao"
+  venue: "ACM SIGSAC Conference on Computer and Communications Security (<strong>CCS 2023</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "CCS"
+  paper_url: "https://dl.acm.org/doi/10.1145/3576915.3623120"
+  location_date: "Copenhagen, Denmark, 2023"
+
+- year: 2023
+  title: "Evaluating C/C++ Vulnerability Detectability of Query-Based Static Application Security Testing Tools"
+  authors: "<strong>Zongjie Li</strong>, Zhibo Liu, Wai Kin Wong, Pingchuan Ma, Shuai Wang"
+  venue: "IEEE Transactions on Dependable and Secure Computing (<strong>TDSC 2023</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "TDSC"
+  paper_url: "https://ieeexplore.ieee.org/document/10400834"
+  location_date: ""
+
+- year: 2023
+  title: "CCTEST: Testing and Repairing Code Completion Systems"
+  authors: "<strong>Zongjie Li</strong>, Chaozheng Wang, Zhibo Liu, Haoxuan Wang, Dong Chen, Shuai Wang, Cuiyun Gao"
+  venue: "IEEE/ACM International Conference on Software Engineering (<strong>ICSE 2023</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "ICSE"
+  paper_url: "https://dl.acm.org/doi/abs/10.1109/ICSE48619.2023.00110"
+  location_date: "Melbourne, Australia, 2023"
+
+- year: 2023
+  title: "REEF: A Framework for Collecting Real-World Vulnerabilities and Fixes"
+  authors: "Chaozheng Wang*, <strong>Zongjie Li*</strong>, Yun Peng, Shuzheng Gao, Sirong Chen, Shuai Wang, Cuiyun Gao, Michael Lyu"
+  venue: "IEEE/ACM International Conference on Automated Software Engineering, Industry Track (<strong>ASE Indus 2023</strong>) <font color=\"red\">CCF-A &amp; Distinguished Paper</font>"
+  venue_short: "ASE"
+  paper_url: "https://arxiv.org/pdf/2309.08115"
+  location_date: "Kirchberg, Luxembourg, 2023"
+
+- year: 2023
+  title: "Exploring Missed Optimizations in WebAssembly Optimizers"
+  authors: "Zhibo Liu, Dongwei Xiao, <strong>Zongjie Li</strong>, Shuai Wang, Wei Meng"
+  venue: "ACM SIGSOFT International Symposium on Software Testing and Analysis (<strong>ISSTA 2023</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "ISSTA"
+  paper_url: "https://dl.acm.org/doi/abs/10.1145/3597926.3598068"
+  location_date: ""
+
+- year: 2023
+  title: "A Unified Framework for Mini-Game Testing: Experience on WeChat"
+  authors: "Chaozheng Wang, Haochuan Lu, Cuiyun Gao, <strong>Zongjie Li</strong>, Ting Xiong, Yuetang Deng"
+  venue: "ACM International Conference on the Foundations of Software Engineering, Industry Track (<strong>FSE Indus 2023</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "FSE"
+  paper_url: "#"
+  location_date: ""
+
+- year: 2022
+  title: "Unleashing the Power of Compiler Intermediate Representation to Enhance Neural Program Embeddings"
+  authors: "<strong>Zongjie Li</strong>, Pingchuan Ma, Huaijin Wang, Shuai Wang, Qiyi Tang, Sen Nie, Shi Wu"
+  venue: "IEEE/ACM International Conference on Software Engineering (<strong>ICSE 2022</strong>) <font color=\"red\">CCF-A</font>"
+  venue_short: "ICSE"
+  paper_url: "https://dl.acm.org/doi/abs/10.1145/3510003.3510217"
+  location_date: "Pittsburgh, PA, USA, 2022"
+
+- year: 2022
+  title: "Static Inference Meets Deep Learning: A Hybrid Type Inference Approach for Python"
+  authors: "Yun Peng, Cuiyun Gao, <strong>Zongjie Li</strong>, Bowei Gao, David Lo, Qirun Zhang, Michael Lyu"
+  venue: "IEEE/ACM International Conference on Software Engineering (<strong>ICSE 2022</strong>) <font color=\"red\">CCF-A &amp; Nominated for Distinguished Paper</font>"
+  venue_short: "ICSE"
+  paper_url: "https://dl.acm.org/doi/10.1145/3510003.3510038"
+  location_date: "Pittsburgh, PA, USA, 2022"
+
+- year: 2022
+  title: "Enriching Query Semantics for Code Search with Reinforcement Learning"
+  authors: "Chaozheng Wang, Zhenhao Nong, Cuiyun Gao, <strong>Zongjie Li</strong>, Jichuan Zeng, Zhenchang Xing, Yang Liu"
+  venue: "Neural Networks, Volume 145 (<strong>Neural Networks 2022</strong>) <font color=\"red\">CCF-B</font>"
+  venue_short: "NN"
+  paper_url: "https://www.sciencedirect.com/science/article/pii/S0893608021003877"
+  location_date: ""
+
+- year: 2021
+  title: "CRaDLe: Deep Code Retrieval based on Semantic Dependency Learning"
+  authors: "Wenchao Gu, <strong>Zongjie Li</strong>, Cuiyun Gao, Chaozheng Wang, Hongyu Zhang, Zenglin Xu, Michael R. Lyu"
+  venue: "Neural Networks, Volume 141 (<strong>Neural Networks 2021</strong>) <font color=\"red\">CCF-B</font>"
+  venue_short: "NN"
+  paper_url: "https://www.sciencedirect.com/science/article/abs/pii/S0893608021001568"
+  location_date: ""

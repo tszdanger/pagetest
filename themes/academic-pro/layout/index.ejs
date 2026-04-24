@@ -1,0 +1,246 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-avatar">
+      <img src="<%= url_for('/img/avatar.jpg') %>" alt="<%= config.author %>" onerror="this.style.display='none'">
+    </div>
+    <h1 class="hero-name"><%= config.author %></h1>
+    <p class="hero-title"><%= config.description %></p>
+    <p class="hero-affiliation">
+      <span><i class="fas fa-map-marker-alt"></i> HKUST &amp; ETH Zurich</span>
+    </p>
+    <div class="hero-links">
+      <a href="https://github.com/tszdanger" target="_blank" rel="noopener" class="hero-link"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://scholar.google.com/citations?user=Sd8mmE0AAAAJ" target="_blank" rel="noopener" class="hero-link"><i class="fas fa-graduation-cap"></i> Scholar</a>
+      <a href="https://www.linkedin.com/in/%E5%AE%97%E6%9D%B0-%E6%9D%8E-ba44291a2/" target="_blank" rel="noopener" class="hero-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:zligo@cse.ust.hk" class="hero-link"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <div class="container">
+    <h2 class="section-title">About</h2>
+    <div class="about-text">
+      <p>
+        My name is <strong>Zongjie Li</strong> (李宗杰 / 李宗傑 / Lee Chung Kit). I am a final-year Ph.D. student in Computer Science at
+        <a href="https://hkust.edu.hk/" target="_blank" rel="noopener">The Hong Kong University of Science and Technology (HKUST)</a>,
+        advised by Prof. <a href="https://www.cse.ust.hk/~shuaiw/" target="_blank" rel="noopener">Shuai Wang</a>.
+        Currently, I am visiting the <a href="https://ast.ethz.ch/" target="_blank" rel="noopener">Advanced Software Technologies (AST) Lab</a> at
+        <a href="https://ethz.ch/en.html" target="_blank" rel="noopener">ETH Zurich</a>, advised by Prof. <a href="https://people.inf.ethz.ch/suz/" target="_blank" rel="noopener">Zhendong Su</a>.
+        Prior to my Ph.D., I obtained my B.S. in Computer Science from Harbin Institute of Technology, Shenzhen.
+      </p>
+      <p>My research interests lie in <strong>Large Language Models for Code</strong>, software security, and AI safety.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Education &amp; Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"><i class="fas fa-graduation-cap"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2021 – Present</span>
+          <h3>Ph.D. in Computer Science</h3>
+          <p>The Hong Kong University of Science and Technology, Hong Kong</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"><i class="fas fa-flask"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Feb 2024 – Present</span>
+          <h3>Visiting Researcher</h3>
+          <p>AST Lab, ETH Zurich, Switzerland &mdash; advised by Prof. Zhendong Su</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Mar – Sep 2021</span>
+          <h3>Research Intern</h3>
+          <p>Keen Lab, Tencent, Shanghai</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Jul 2020 – Jan 2021</span>
+          <h3>Computing Vision Intern</h3>
+          <p>Vertical Platform and Software Validation, Intel, Shenzhen</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"><i class="fas fa-university"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2017 – 2021</span>
+          <h3>B.S. in Computer Science</h3>
+          <p>Harbin Institute of Technology, Shenzhen</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"><i class="fas fa-plane"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Aug 2020</span>
+          <h3>Pre-doctoral Research School</h3>
+          <p>Cornell, Maryland, Max Planck Pre-doctoral Research School, Saarbr&uuml;cken, Germany</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"><i class="fas fa-plane"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Summer 2019</span>
+          <h3>Summer Workshop — AI and Security</h3>
+          <p>National University of Singapore</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"><i class="fas fa-plane"></i></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Winter 2019</span>
+          <h3>Exchange Program — IoT and 6G</h3>
+          <p>University of New South Wales, Sydney, Australia</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Publications Section -->
+<section id="publications" class="section">
+  <div class="container">
+    <h2 class="section-title">Publications</h2>
+    <p class="section-subtitle"><i class="fas fa-trophy"></i> <strong>CCF-A</strong> denotes top-tier venues in Computer Science. * equal contribution.</p>
+    <%
+      var pubData = site.data.publications || [];
+      var years = {};
+      pubData.forEach(function(pub) {
+        var year = pub.year || '';
+        if (!years[year]) years[year] = [];
+        years[year].push(pub);
+      });
+      var sortedYears = Object.keys(years).sort(function(a,b){ return Number(b) - Number(a); });
+    %>
+    <% sortedYears.forEach(function(year) { %>
+    <div class="pub-year-group">
+      <h3 class="pub-year"><%= year %></h3>
+      <% years[year].forEach(function(pub, i) { %>
+      <div class="pub-item">
+        <div class="pub-badge"><%= pub.venue_short || 'PUB' %></div>
+        <div class="pub-info">
+          <h4 class="pub-title">
+            <% if (pub.paper_url && pub.paper_url !== '#') { %><a href="<%= pub.paper_url %>" target="_blank" rel="noopener"><% } %>
+            <%= pub.title %>
+            <% if (pub.paper_url && pub.paper_url !== '#') { %></a><% } %>
+          </h4>
+          <p class="pub-authors"><%- pub.authors || '' %></p>
+          <p class="pub-venue">
+            <%- pub.venue || '' %>
+            <% if (pub.location_date) { %><span class="pub-location"> &mdash; <%= pub.location_date %></span><% } %>
+          </p>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+    <% }); %>
+  </div>
+</section>
+
+<!-- Honors Section -->
+<section id="honors" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Honors &amp; Awards</h2>
+    <div class="honors-grid">
+      <div class="honor-card">
+        <div class="honor-year">2018 &amp; 2020</div>
+        <h3>National Scholarship</h3>
+        <p>Ministry of Education, People's Republic of China</p>
+      </div>
+      <div class="honor-card">
+        <div class="honor-year">2022</div>
+        <h3>First Runner-up — AOTULE Conference (AI for Green)</h3>
+        <p>Engineering for Energy &amp; Sustainability, AOTULE</p>
+      </div>
+      <div class="honor-card">
+        <div class="honor-year">2022</div>
+        <h3>First Runner-up — IEEE HK CI Research Paper Competition</h3>
+        <p>IEEE Hong Kong</p>
+      </div>
+      <div class="honor-card">
+        <div class="honor-year">2020</div>
+        <h3>Second Prize — National College Computer System Ability Competition</h3>
+      </div>
+      <div class="honor-card">
+        <div class="honor-year">2020</div>
+        <h3>Third Prize — National Energy Conservation Competition</h3>
+        <p>Department of Higher Education</p>
+      </div>
+      <div class="honor-card">
+        <div class="honor-year">2019</div>
+        <h3>Second Prize — National AI Innovation Conference</h3>
+        <p>Chinese Association for Artificial Intelligence</p>
+      </div>
+      <div class="honor-card">
+        <div class="honor-year">2019</div>
+        <h3>Second Prize — National Mathematical Modeling Contest</h3>
+        <p>China Society for Applied Mathematics</p>
+      </div>
+      <div class="honor-card">
+        <div class="honor-year">2019</div>
+        <h3>Third Prize — AI &amp; Security Cluster, Summer Workshop</h3>
+        <p>National University of Singapore</p>
+      </div>
+      <div class="honor-card">
+        <div class="honor-year">2018</div>
+        <h3>Second Prize — National English Competition</h3>
+        <p>Foreign Language Education Committee</p>
+      </div>
+      <div class="honor-card">
+        <div class="honor-year">2018</div>
+        <h3>Second Prize — Mathematics Competition</h3>
+        <p>China Mathematics Committee</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Section -->
+<section id="service" class="section">
+  <div class="container">
+    <h2 class="section-title">Professional Service</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3><i class="fas fa-users"></i> Conference Reviewer</h3>
+        <div class="service-tags">
+          <span class="service-tag">S&amp;P 2023</span>
+          <span class="service-tag">ICSE 2021</span>
+          <span class="service-tag">ICSE-SEET 2022</span>
+          <span class="service-tag">ASIACCS 2022</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <h3><i class="fas fa-clipboard-check"></i> Artifact Evaluation Committee</h3>
+        <div class="service-tags">
+          <span class="service-tag">USENIX ATC 2022</span>
+          <span class="service-tag">WiSec 2022</span>
+          <span class="service-tag">OSDI 2022</span>
+          <span class="service-tag">ISSTA 2022</span>
+        </div>
+      </div>
+      <div class="service-card">
+        <h3><i class="fas fa-shield-alt"></i> Security Advisories</h3>
+        <div class="cve-list">
+          <span>CVE-2022-32323</span>
+          <span>CVE-2022-1212</span>
+          <span>CVE-2022-1286</span>
+          <span>CVE-2022-1276</span>
+          <span>CVE-2022-1427</span>
+          <span>CVE-2022-1201</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
