@@ -7,45 +7,49 @@
   <title>Zongjie Li</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <span class="header-name">Zongjie Li</span>
-    <ul class="header-nav">
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-name">Zongjie Li</span>
+    <ul class="nav-links">
       <li><a href="/" class="active">Home</a></li>
       <li><a href="publications.html">Publications</a></li>
+      <li><a href="#insights">Insights</a></li>
       <li><a href="https://scholar.google.com/citations?user=Sd8mmE0AAAAJ" target="_blank" rel="noopener">Scholar</a></li>
-      <li><a href="https://github.com/tszdanger" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
   </div>
-</header>
+</nav>
 
 <main class="main">
 
-  <!-- Identity -->
+  <!-- ================================================================
+       IDENTITY
+       ================================================================ -->
   <div class="identity">
     <div class="identity-photo">
-      <img src="img/avatar.jpg" alt="Zongjie Li" onerror="this.parentElement.style.display='none'">
+      <img src="img/avatar.jpg" alt="Zongjie Li">
     </div>
     <div class="identity-text">
       <h1>Zongjie Li</h1>
-      <p class="role">Postdoctoral Fellow &mdash; Computer Science &amp; Engineering</p>
+      <p class="role">Postdoctoral Fellow — Computer Science &amp; Engineering</p>
       <p class="affiliation">The Hong Kong University of Science and Technology</p>
       <div class="identity-links">
         <a href="https://scholar.google.com/citations?user=Sd8mmE0AAAAJ" target="_blank" rel="noopener">Google Scholar</a>
         <a href="https://github.com/tszdanger" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com/in/%E5%AE%97%E6%9D%B0-%E6%9D%8E-ba44291a2/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/%E5%AE%97%E6%9D%B0-%E6%9D%8E-ba44291a2/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://orcid.org/0000-0002-9897-4086" target="_blank" rel="noopener">ORCID</a>
         <a href="mailto:zligo@connect.ust.hk">Email</a>
       </div>
     </div>
   </div>
 
-  <!-- Bio -->
+  <!-- ================================================================
+       ABOUT
+       ================================================================ -->
   <div class="section">
     <div class="section-head">About</div>
     <div class="bio-text">
@@ -53,87 +57,247 @@
     </div>
   </div>
 
-  <!-- Selected Publications — First-author focus -->
+  <!-- ================================================================
+       RECENT NEWS — prominent, eye-catching
+       ================================================================ -->
   <div class="section">
-    <div class="section-head">Selected Publications <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--c-muted)">(first / co-first author)</span></div>
-    <ol class="pub-compact">
+    <div class="section-head">Recent News</div>
+
+    <div class="news-card news-featured reveal">
+      <div class="news-date">April 2026</div>
+      <div class="news-text">
+        <strong>Google TPU Research Cloud (TRC)</strong> — We are awarded a 320-chip TPU cluster, equivalent to <span class="highlight">~$200,000 USD</span> in compute, to support our upcoming research on large-scale model robustness and security.
+      </div>
+    </div>
+
+    <div class="news-card news-featured reveal">
+      <div class="news-date">April 2026</div>
+      <div class="news-text">
+        <strong>Cohere Labs Catalyst Grant</strong> — Awarded $1,000 API Credits to support the project "Repairing the Multilingual Tool Calling Gap in Agentic LLMs."
+      </div>
+    </div>
+
+    <div class="news-card reveal">
+      <div class="news-date">March 2026</div>
+      <div class="news-text">
+        Paper <em>"Cascaded Code Editing: Large-Small Model Collaboration for Effective and Efficient Code Editing"</em> accepted at <strong>FSE 2026</strong>. Paper <em>"JSProtect: A Scalable Obfuscation Framework for Mini-Games in WeChat"</em> accepted at <strong>FSE Indus 2026</strong> — special thanks to Tencent and WeChat team.
+      </div>
+    </div>
+
+    <div class="news-card reveal">
+      <div class="news-date">January 2026</div>
+      <div class="news-text">
+        Two papers accepted at <strong>ICLR 2026</strong>: <em>"GuidedBench: Measuring and Mitigating the Evaluation Discrepancies of In-the-wild LLM Jailbreak Methods"</em> and <em>"EAMET: Robust Massive Model Editing via Embedding Alignment Optimization."</em>
+      </div>
+    </div>
+
+    <div class="news-card reveal">
+      <div class="news-date">December 2025</div>
+      <div class="news-text">
+        Paper <em>"MASLeak: Investigating and Exposing Intellectual Property Leakage Vulnerabilities in Multi-Agent Systems"</em> accepted at <strong>USENIX Security 2026</strong>.
+      </div>
+    </div>
+
+    <div class="news-more" id="moreNews">
+      <div class="news-card reveal">
+        <div class="news-date">November 2025</div>
+        <div class="news-text">
+          Tutorial <em>"Bridging the Gap between Causal Inference and Software Engineering"</em> presented at <strong>ASE 2025</strong>. Invited talk on <em>"Advances in AI-Augmented Software Vulnerability Discovery"</em> at <strong>GitHub Copilot</strong>. Our project <a href="https://www.cipherinsight.co/" target="_blank" rel="noopener">CipherInsight</a> receives <strong>HKUST TSSSU</strong> support.
+        </div>
+      </div>
+      <div class="news-card reveal">
+        <div class="news-date">September 2025</div>
+        <div class="news-text">
+          Awarded the <strong>2025 Ant Group Intech Scholarship</strong> (10 recipients worldwide). Paper on WeChat Mini Game obfuscation accepted at <strong>ASE 2025 Industry Track</strong>.
+        </div>
+      </div>
+      <div class="news-card news-featured reveal">
+        <div class="news-date">June 2025</div>
+        <div class="news-text">
+          Our project <a href="https://www.cipherinsight.co/" target="_blank" rel="noopener">CipherInsight</a> wins the <strong>Tech Fest Hong Kong Awards 2025</strong>. Proposal on LLM Safety Guardrail supported by <strong>Bridge Gap Fund</strong>.
+        </div>
+      </div>
+      <div class="news-card reveal">
+        <div class="news-date">May 2025</div>
+        <div class="news-text">
+          Papers on LLM SFT data extraction and CTF Agent accepted at <strong>CCS 2025</strong>. Paper on Constraint Synthesis accepted at <strong>SIGMOD 2026</strong>. Paper on Causality-Aided Evaluation of LLCM accepted at <strong>ISSTA 2025</strong>.
+        </div>
+      </div>
+    </div>
+
+    <button class="news-toggle-btn" id="newsToggle" onclick="toggleNews()">
+      <span id="newsToggleText">Show more</span>
+      <span class="abs-arrow" id="newsArrow">▾</span>
+    </button>
+  </div>
+
+  <!-- ================================================================
+       SELECTED PUBLICATIONS — first/co-first author, with abstracts
+       ================================================================ -->
+  <div class="section">
+    <div class="section-head">Selected Publications <span style="font-weight:400;text-transform:none;letter-spacing:0;color:var(--text-muted);">— first / co-first author</span></div>
+
+    <ol class="pub-list reveal-stagger">
+
+      <!-- 1. CCS 2025 - Differentiation-Based Extraction -->
       <li>
-        <strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang, Zhendong Su.<br>
-        <em>Differentiation-Based Extraction of Proprietary Data from Fine-tuned LLMs.</em>
-        <span class="pub-venue">CCS 2025 <span class="ccf">CCF-A</span></span>
+        <p class="pub-title-line"><a href="#" onclick="return false">Differentiation-Based Extraction of Proprietary Data from Fine-tuned LLMs</a></p>
+        <p class="pub-meta"><strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang, Zhendong Su.</p>
+        <p class="pub-venue-tag">CCS 2025 <span class="ccf">CCF-A</span></p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">The increasing demand for domain-specific and human-aligned Large Language Models (LLMs) has led to the widespread adoption of Supervised Fine-Tuning (SFT) techniques. SFT datasets often comprise valuable instruction-response pairs, making them highly valuable targets for potential extraction. This paper studies this critical research problem for the first time. We develop a novel extraction method specifically designed for SFT models, called Differentiated Data Extraction (DDE), which exploits the confidence levels of fine-tuned models and their behavioral differences from pre-trained base models. Through extensive experiments across multiple domains and scenarios, we demonstrate the feasibility of SFT data extraction using DDE.</div></div>
       </li>
+
+      <!-- 2. OOPSLA 2025 -->
       <li>
-        <strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang, Zhendong Su.<br>
-        <a href="https://dl.acm.org/doi/10.1145/3720449" target="_blank" rel="noopener"><em>API-guided Dataset Synthesis to Finetune Large Code Models.</em></a>
-        <span class="pub-venue">OOPSLA 2025 <span class="ccf">CCF-A</span></span>
+        <p class="pub-title-line"><a href="https://dl.acm.org/doi/10.1145/3720449" target="_blank" rel="noopener">API-guided Dataset Synthesis to Finetune Large Code Models</a></p>
+        <p class="pub-meta"><strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang, Zhendong Su.</p>
+        <p class="pub-venue-tag">OOPSLA 2025 <span class="ccf">CCF-A</span> · Singapore</p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">Large code models (LCMs), pre-trained on vast code corpora, have demonstrated remarkable performance across a wide array of code-related tasks. Supervised fine-tuning (SFT) plays a vital role in aligning these models with specific requirements. However, synthesizing high-quality SFT datasets poses a significant challenge due to the uneven quality of datasets and the scarcity of domain-specific datasets. We propose DataScope, an API-guided dataset synthesis framework designed to enhance the SFT process for LCMs in both general and domain-specific scenarios. DataScope comprises two main components: Dsel and Dgen. Extensive experiments demonstrate DataScope's effectiveness, with models fine-tuned on its synthesized datasets outperforming those tuned on unoptimized datasets five times larger.</div></div>
       </li>
+
+      <!-- 3. ICSE 2024 -->
       <li>
-        <strong>Zongjie Li</strong>, Chaozheng Wang, Pingchuan Ma, Chaowei Liu, Shuai Wang, Daoyuan Wu, Cuiyun Gao, Yang Liu.<br>
-        <a href="https://arxiv.org/pdf/2303.03012.pdf" target="_blank" rel="noopener"><em>On the Feasibility of Specialized Ability Extracting for Large Language Code Models.</em></a>
-        <span class="pub-venue">ICSE 2024 <span class="ccf">CCF-A</span></span>
+        <p class="pub-title-line"><a href="https://arxiv.org/pdf/2303.03012.pdf" target="_blank" rel="noopener">On the Feasibility of Specialized Ability Extracting for Large Language Code Models</a></p>
+        <p class="pub-meta"><strong>Zongjie Li</strong>, Chaozheng Wang, Pingchuan Ma, Chaowei Liu, Shuai Wang, Daoyuan Wu, Cuiyun Gao, Yang Liu.</p>
+        <p class="pub-venue-tag">ICSE 2024 <span class="ccf">CCF-A</span> · Lisbon, Portugal</p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">Recent advances in large language models (LLMs) significantly boost their usage in software engineering. However, training a well-performing LLM demands a substantial workforce for data collection and annotation. Moreover, training datasets may be proprietary or partially open, and the process often requires a costly GPU cluster. The intellectual property value of commercial LLMs makes them attractive targets for imitation attacks. In this paper, we explore the feasibility of launching imitation attacks on LLMs to extract their specialized code abilities, such as code synthesis and code translation. Our results show promising outcomes, demonstrating that with a reasonable number of queries, attackers can train a medium-sized backbone model to replicate specialized code behaviors similar to the target LLMs.</div></div>
       </li>
+
+      <!-- 4. CCS 2023 -->
       <li>
-        <strong>Zongjie Li</strong>, Chaozheng Wang, Shuai Wang, Cuiyun Gao.<br>
-        <a href="https://dl.acm.org/doi/10.1145/3576915.3623120" target="_blank" rel="noopener"><em>Protecting Intellectual Property of LLM-Based Code Generation APIs via Watermarks.</em></a>
-        <span class="pub-venue">CCS 2023 <span class="ccf">CCF-A</span></span>
+        <p class="pub-title-line"><a href="https://dl.acm.org/doi/10.1145/3576915.3623120" target="_blank" rel="noopener">Protecting Intellectual Property of LLM-Based Code Generation APIs via Watermarks</a></p>
+        <p class="pub-meta"><strong>Zongjie Li</strong>, Chaozheng Wang, Shuai Wang, Cuiyun Gao.</p>
+        <p class="pub-venue-tag">CCS 2023 <span class="ccf">CCF-A</span> · Copenhagen, Denmark</p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">The rise of large language model-based code generation (LLCG) has enabled various commercial services and APIs. Training LLCG models is often expensive and time-consuming, and the training data are often large-scale and even inaccessible to the public. As a result, the risk of intellectual property (IP) theft over the LLCG models (e.g., via imitation attacks) has been a serious concern. In this paper, we propose the first watermark technique to protect LLCG APIs from remote imitation attacks. Our proposed technique is based on replacing tokens in an LLCG output with their "synonyms" available in the programming language. We design six WM schemes (instantiated into over 30 WM passes) which rely on conceptually distinct token synonyms available in programming languages.</div></div>
       </li>
+
+      <!-- 5. TDSC 2023 -->
       <li>
-        <strong>Zongjie Li</strong>, Zhibo Liu, Wai Kin Wong, Pingchuan Ma, Shuai Wang.<br>
-        <a href="https://ieeexplore.ieee.org/document/10400834" target="_blank" rel="noopener"><em>Evaluating C/C++ Vulnerability Detectability of Query-Based SAST Tools.</em></a>
-        <span class="pub-venue">TDSC 2023 <span class="ccf">CCF-A</span></span>
+        <p class="pub-title-line"><a href="https://ieeexplore.ieee.org/document/10400834" target="_blank" rel="noopener">Evaluating C/C++ Vulnerability Detectability of Query-Based SAST Tools</a></p>
+        <p class="pub-meta"><strong>Zongjie Li</strong>, Zhibo Liu, Wai Kin Wong, Pingchuan Ma, Shuai Wang.</p>
+        <p class="pub-venue-tag">IEEE TDSC 2023 <span class="ccf">CCF-A</span></p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">In recent years, query-based static application security testing (Q-SAST) tools such as CodeQL have gained popularity due to their ability to codify vulnerability knowledge into SQL-like queries. We conduct the first in-depth study of Q-SAST to demystify their C/C++ vulnerability detectability. Our study is conducted from three complementary aspects: we use a synthetic CWE test suite and a real-world CVE test suite, totaling almost 30K programs with known CWE/CVE, to assess popular Q-SAST and industry-leading SAST tools. We then gather defect-fixing pull requests to characterize historically-fixed defects. To enhance vulnerability detection, we design SAST-MT, a metamorphic testing framework to detect false positives and false negatives of Q-SAST.</div></div>
       </li>
+
+      <!-- 6. ICSE 2023 -->
       <li>
-        <strong>Zongjie Li</strong>, Chaozheng Wang, Zhibo Liu, Haoxuan Wang, Dong Chen, Shuai Wang, Cuiyun Gao.<br>
-        <a href="https://dl.acm.org/doi/abs/10.1109/ICSE48619.2023.00110" target="_blank" rel="noopener"><em>CCTEST: Testing and Repairing Code Completion Systems.</em></a>
-        <span class="pub-venue">ICSE 2023 <span class="ccf">CCF-A</span></span>
+        <p class="pub-title-line"><a href="https://dl.acm.org/doi/abs/10.1109/ICSE48619.2023.00110" target="_blank" rel="noopener">CCTEST: Testing and Repairing Code Completion Systems</a></p>
+        <p class="pub-meta"><strong>Zongjie Li</strong>, Chaozheng Wang, Zhibo Liu, Haoxuan Wang, Dong Chen, Shuai Wang, Cuiyun Gao.</p>
+        <p class="pub-venue-tag">ICSE 2023 <span class="ccf">CCF-A</span> · Melbourne, Australia</p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">Code completion, a highly valuable topic in the software development domain, has been increasingly promoted for use by recent advances in large language models (LLMs). In contrast to this flourishing market, we find that code completion systems often output suspicious results, and to date, an automated testing and enhancement framework for code completion systems is not available. This research proposes CCTEST, a framework to test and repair code completion systems in blackbox settings. CCTEST features a set of novel mutation strategies, namely program structure-correlated (PSC) mutations, to generate mutated code completion inputs. We detected a total of 33,540 inputs (with a true positive rate of 86%) that can trigger erroneous cases from eight popular LLM-based code completion systems. With repairing, we show that the accuracy of code completion systems is notably increased by 40% and 67% with respect to BLEU score and Levenshtein edit similarity.</div></div>
       </li>
+
+      <!-- 7. ASE 2023 - REEF (co-first) - Distinguished Paper -->
       <li>
-        Chaozheng Wang*, <strong>Zongjie Li*</strong>, Yun Peng, Shuzheng Gao, Sirong Chen, Shuai Wang, Cuiyun Gao, Michael Lyu.<br>
-        <a href="https://arxiv.org/pdf/2309.08115" target="_blank" rel="noopener"><em>REEF: A Framework for Collecting Real-World Vulnerabilities and Fixes.</em></a>
-        <span class="pub-venue">ASE Indus 2023 <span class="ccf">CCF-A</span> &ensp;&#9670; Distinguished Paper</span>
+        <p class="pub-title-line"><a href="https://arxiv.org/pdf/2309.08115" target="_blank" rel="noopener">REEF: A Framework for Collecting Real-World Vulnerabilities and Fixes</a></p>
+        <p class="pub-meta">Chaozheng Wang*, <strong>Zongjie Li*</strong>, Yun Peng, Shuzheng Gao, Sirong Chen, Shuai Wang, Cuiyun Gao, Michael Lyu. <span style="font-size:0.78rem;color:var(--text-muted);">(* equal contribution)</span></p>
+        <p class="pub-venue-tag">ASE Indus 2023 <span class="ccf">CCF-A</span><span class="pub-dist">&#9670; Distinguished Paper</span></p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">Software plays a crucial role in our daily lives, and therefore the quality and security of software systems have become increasingly important. However, vulnerabilities in software still pose a significant threat. Recent advances in automated program repair have sought to automatically detect and fix bugs using data-driven techniques. To address the limitations of existing benchmarks, we propose an automated collecting framework REEF to collect REal-world vulnErabilities and Fixes from open-source repositories. We develop a multi-language crawler to collect vulnerabilities and their fixes, and design metrics to filter for high-quality vulnerability-fix pairs. The dataset we collect contains 4,466 CVEs with 30,987 patches (including 236 CWE) across 7 programming languages with detailed related information, which is superior to existing benchmarks in scale, coverage, and quality.</div></div>
       </li>
+
+      <!-- 8. ICSE 2022 - Compiler IR -->
       <li>
-        <strong>Zongjie Li</strong>, Pingchuan Ma, Huaijin Wang, Shuai Wang, Qiyi Tang, Sen Nie, Shi Wu.<br>
-        <a href="https://dl.acm.org/doi/abs/10.1145/3510003.3510217" target="_blank" rel="noopener"><em>Unleashing the Power of Compiler IR to Enhance Neural Program Embeddings.</em></a>
-        <span class="pub-venue">ICSE 2022 <span class="ccf">CCF-A</span></span>
+        <p class="pub-title-line"><a href="https://dl.acm.org/doi/abs/10.1145/3510003.3510217" target="_blank" rel="noopener">Unleashing the Power of Compiler IR to Enhance Neural Program Embeddings</a></p>
+        <p class="pub-meta"><strong>Zongjie Li</strong>, Pingchuan Ma, Huaijin Wang, Shuai Wang, Qiyi Tang, Sen Nie, Shi Wu.</p>
+        <p class="pub-venue-tag">ICSE 2022 <span class="ccf">CCF-A</span> · Pittsburgh, PA, USA</p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">Neural program embeddings have demonstrated considerable promise in a range of program analysis tasks, including clone identification, program repair, code completion, and program synthesis. However, most existing methods generate neural program embeddings directly from the program source codes. This paper takes a fresh look at how to improve program embeddings by leveraging compiler intermediate representation (IR). We first demonstrate simple yet highly effective methods for enhancing embedding quality by training embedding models alongside source code and LLVM IR generated by default optimization levels (e.g., -O2). We then introduce IRGen, a framework based on genetic algorithms (GA), to identify (near-)optimal sequences of optimization flags that can significantly improve embedding quality.</div></div>
       </li>
+
+      <!-- 9. ICSE 2022 - Static Inference - Distinguished Paper Nomination -->
       <li>
-        <strong>Zongjie Li</strong>, Chaozheng Wang, Pingchuan Ma, Daoyuan Wu, Shuai Wang, Cuiyun Gao, Yang Liu.<br>
-        <a href="https://arxiv.org/abs/2310.01432" target="_blank" rel="noopener"><em>Split and Merge: Aligning Position Biases in LLM-based Evaluators.</em></a>
-        <span class="pub-venue">EMNLP 2024</span>
+        <p class="pub-title-line"><a href="https://dl.acm.org/doi/10.1145/3510003.3510038" target="_blank" rel="noopener">Static Inference Meets Deep Learning: A Hybrid Type Inference Approach for Python</a></p>
+        <p class="pub-meta">Yun Peng, Cuiyun Gao, <strong>Zongjie Li</strong>, Bowei Gao, David Lo, Qirun Zhang, Michael Lyu.</p>
+        <p class="pub-venue-tag">ICSE 2022 <span class="ccf">CCF-A</span><span class="pub-dist">&#9670; Nominated for Distinguished Paper</span></p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">Static type inference approaches have shown promising results in inferring types for Python programs. However, existing approaches suffer from imprecision when handling complex type inference scenarios. This paper proposes a hybrid approach that combines the strengths of static inference and deep learning. By integrating neural predictions with traditional static analysis, our method achieves significant improvements in type inference accuracy. The approach was evaluated on real-world Python projects and demonstrated superior performance compared to state-of-the-art techniques, earning a nomination for Distinguished Paper at ICSE 2022.</div></div>
+      </li>
+
+      <!-- 10. EMNLP 2024 -->
+      <li>
+        <p class="pub-title-line"><a href="https://arxiv.org/abs/2310.01432" target="_blank" rel="noopener">Split and Merge: Aligning Position Biases in LLM-based Evaluators</a></p>
+        <p class="pub-meta"><strong>Zongjie Li</strong>, Chaozheng Wang, Pingchuan Ma, Daoyuan Wu, Shuai Wang, Cuiyun Gao, Yang Liu.</p>
+        <p class="pub-venue-tag">EMNLP 2024 · Miami, FL, USA</p>
+        <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+          <span class="abs-arrow">▸</span> Abstract
+        </button>
+        <div class="abs-content"><div class="abs-text">Large language models (LLMs) have shown promise as automated evaluators for assessing the quality of answers generated by AI systems. However, these LLM-based evaluators exhibit position bias, or inconsistency, when used to evaluate candidate answers in pairwise comparisons, favoring either the first or second answer regardless of content. To address this limitation, we propose PORTIA, an alignment-based system designed to mimic human comparison strategies to calibrate position bias in a lightweight yet effective manner. Our results show that PORTIA markedly enhances the consistency rates for all the models and comparison forms tested, achieving an average relative improvement of 47.46%. Remarkably, PORTIA enables less advanced GPT models to achieve 88% agreement with the state-of-the-art GPT-4 model at just 10% of the cost.</div></div>
       </li>
     </ol>
+
     <div class="section-foot">
       <a href="publications.html">All publications (28 papers, 2021–2026) →</a>
     </div>
   </div>
 
-  <!-- Two columns: News + Awards -->
-  <div class="section">
-    <div class="grid-2">
-      <!-- News -->
-      <div>
-        <div class="section-head">Recent News</div>
-        <ul class="news-compact">
-          <li class="news-highlight"><span class="news-date">2026-04</span> Awarded <strong>Google TPU Research Cloud</strong> — 320-chip cluster (~$200K)</li>
-          <li class="news-highlight"><span class="news-date">2026-04</span> Awarded <strong>Cohere Labs Catalyst Grant</strong></li>
-          <li><span class="news-date">2026-03</span> Paper accepted at <strong>FSE 2026</strong> (Cascaded Code Editing)</li>
-          <li><span class="news-date">2026-03</span> Paper accepted at <strong>FSE Indus 2026</strong> (JSProtect)</li>
-          <li><span class="news-date">2026-01</span> Two papers accepted at <strong>ICLR 2026</strong></li>
-          <li><span class="news-date">2025-12</span> Paper accepted at <strong>USENIX Security 2026</strong></li>
-          <li><span class="news-date">2025-11</span> Invited talk at <strong>GitHub Copilot</strong></li>
-          <li><span class="news-date">2025-11</span> Tutorial at <strong>ASE 2025</strong></li>
-          <li><span class="news-date">2025-11</span> CipherInsight supported by <strong>HKUST TSSSU</strong></li>
-          <li class="news-highlight"><span class="news-date">2025-09</span> <strong>Ant Group Intech Scholarship</strong> (10 worldwide)</li>
-          <li><span class="news-date">2025-06</span> CipherInsight wins <strong>Tech Fest HK Awards 2025</strong></li>
-          <li><span class="news-date">2025-05</span> Papers accepted at <strong>CCS 2025</strong>, <strong>SIGMOD 2026</strong></li>
-        </ul>
+  <!-- ================================================================
+       INSIGHTS / BLOG
+       ================================================================ -->
+  <div class="section" id="insights">
+    <div class="section-head">Insights &amp; Writing</div>
+    <div class="insights-grid reveal-stagger">
+
+      <div class="insight-card">
+        <div class="insight-tag">LLM · Security</div>
+        <h4>What Makes SFT Data Extractable? A Taxonomy of Fine-tuning Data Leakage</h4>
+        <p>Reflections on our CCS 2025 work — why fine-tuned models memorize, and what the industry needs to know about data extraction risks in production LLM deployments.</p>
       </div>
 
+      <div class="insight-card">
+        <div class="insight-tag">Code · Models</div>
+        <h4>APIs as the Rosetta Stone: Rethinking Dataset Quality for Code Models</h4>
+        <p>How API coverage can serve as a proxy for SFT dataset quality. Lessons from building DataScope and why five times less data can yield better code models.</p>
+      </div>
+
+      <div class="insight-card">
+        <div class="insight-tag">Research · Practice</div>
+        <h4>From Compiler IR to Neural Embeddings: The Untapped Potential of Intermediate Representations</h4>
+        <p>Why compiler intermediate representations remain one of the most overlooked yet powerful signals for program understanding — a look back at our ICSE 2022 work and forward to LLM-era applications.</p>
+      </div>
+
+      <div class="insight-card">
+        <div class="insight-tag">Tooling · Security</div>
+        <h4>CipherInsight: Building Practical AI Security Tooling from Research</h4>
+        <p>Lessons learned from bridging the gap between academic vulnerability detection research and real-world security tooling — what worked, what didn't, and what's next.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================================================================
+       AWARDS + EDUCATION + SERVICE
+       ================================================================ -->
+  <div class="section">
+    <div class="grid-2">
       <!-- Awards -->
       <div>
         <div class="section-head">Awards &amp; Honors</div>
-        <ul class="awards-compact">
+        <ul class="awards-compact reveal-stagger">
           <li><span class="aw-year">2026</span> Google TPU Research Cloud <span class="aw-note">~$200K</span></li>
           <li><span class="aw-year">2026</span> Cohere Labs Catalyst Grant</li>
           <li><span class="aw-year">2025</span> Ant Group Intech Scholarship <span class="aw-note">10 worldwide</span></li>
@@ -142,44 +306,53 @@
           <li><span class="aw-year">2023</span> ASE 2023 Distinguished Paper</li>
           <li><span class="aw-year">2022</span> AOTULE Conference — First Runner-up</li>
           <li><span class="aw-year">2022</span> IEEE HK CI Research Paper — First Runner-up</li>
-          <li><span class="aw-year">2021</span> ICSE 2022 Nominated for Distinguished Paper</li>
+          <li><span class="aw-year">2021</span> ICSE 2022 — Nominated for Distinguished Paper</li>
           <li><span class="aw-year">2018, 2020</span> National Scholarship, P.R. China</li>
         </ul>
       </div>
-    </div>
-  </div>
 
-  <!-- Education + Service -->
-  <div class="section">
-    <div class="grid-2">
+      <!-- Education -->
       <div>
         <div class="section-head">Education &amp; Experience</div>
-        <ul class="ed-compact">
+        <ul class="ed-compact reveal-stagger">
           <li><span class="ed-date">2025–Present</span> Postdoc, HKUST</li>
           <li><span class="ed-date">2024–2025</span> Visiting Researcher, ETH Zurich</li>
           <li><span class="ed-date">2021–2025</span> Ph.D. CS, HKUST</li>
           <li><span class="ed-date">Mar–Sep 2021</span> Research Intern, Tencent Keen Lab</li>
           <li><span class="ed-date">Jul 2020–Jan 2021</span> CV Intern, Intel Shenzhen</li>
           <li><span class="ed-date">2017–2021</span> B.S. CS, HIT Shenzhen</li>
-          <li><span class="ed-date">Aug 2020</span> Pre-doc Research School, Cornell/Maryland/MPI</li>
+          <li><span class="ed-date">Aug 2020</span> Pre-doc School, Cornell/Maryland/MPI</li>
           <li><span class="ed-date">2019</span> Summer Workshop, NUS Singapore</li>
         </ul>
       </div>
+    </div>
+  </div>
 
+  <!-- Service -->
+  <div class="section">
+    <div class="grid-2">
       <div>
         <div class="section-head">Professional Service</div>
         <div class="service-compact">
-          <p><span class="sv-label">Conference Reviewer:</span></p>
+          <p><span class="sv-label">Conference Reviewer</span></p>
           <div class="tag-inline">
-            <span>S&P 2023</span><span>ICSE 2021</span><span>ICSE-SEET 2022</span><span>ASIACCS 2022</span>
+            <span>S&amp;P 2023</span><span>ICSE 2021</span><span>ICSE-SEET 2022</span><span>ASIACCS 2022</span>
           </div>
-          <p style="margin-top:10px;"><span class="sv-label">Artifact Evaluation Committee:</span></p>
+          <p style="margin-top:10px;"><span class="sv-label">Artifact Evaluation Committee</span></p>
           <div class="tag-inline">
-            <span>USENIX ATC 2022</span><span>WiSec 2022</span><span>OSDI 2022</span><span>ISSTA 2022</span>
+            <span>USENIX ATC</span><span>WiSec 2022</span><span>OSDI 2022</span><span>ISSTA 2022</span>
           </div>
-          <div class="cve-inline">
-            <span>CVE-2022-32323</span><span>CVE-2022-1212</span><span>CVE-2022-1286</span><span>CVE-2022-1276</span><span>CVE-2022-1427</span><span>CVE-2022-1201</span>
-          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-head">Security Advisories</div>
+        <div class="cve-list">
+          <span class="cve-tag">CVE-2022-32323</span>
+          <span class="cve-tag">CVE-2022-1212</span>
+          <span class="cve-tag">CVE-2022-1286</span>
+          <span class="cve-tag">CVE-2022-1276</span>
+          <span class="cve-tag">CVE-2022-1427</span>
+          <span class="cve-tag">CVE-2022-1201</span>
         </div>
       </div>
     </div>
@@ -188,8 +361,75 @@
 </main>
 
 <footer class="site-footer">
-  Zongjie Li &middot; HKUST CSE &middot; zligo@connect.ust.hk
+  Zongjie Li · HKUST CSE · zligo@connect.ust.hk
 </footer>
+
+<script>
+/* ================================================================
+   Abstract Toggle
+   ================================================================ */
+function toggleAbstract(btn) {
+  var content = btn.nextElementSibling;
+  var arrow = btn.querySelector('.abs-arrow');
+  var isOpen = content.classList.contains('open');
+  content.classList.toggle('open');
+  btn.classList.toggle('open');
+  arrow.textContent = isOpen ? '▸' : '▾';
+}
+
+/* ================================================================
+   News Toggle
+   ================================================================ */
+function toggleNews() {
+  var more = document.getElementById('moreNews');
+  var text = document.getElementById('newsToggleText');
+  var arrow = document.getElementById('newsArrow');
+  var isOpen = more.classList.contains('show');
+  more.classList.toggle('show');
+  text.textContent = isOpen ? 'Show more' : 'Show less';
+  arrow.textContent = isOpen ? '▾' : '▴';
+}
+
+/* ================================================================
+   Scroll Reveal — Intersection Observer
+   ================================================================ */
+(function() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -30px 0px', threshold: 0.08 });
+
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(function(el) {
+    observer.observe(el);
+  });
+})();
+
+/* ================================================================
+   Active nav section
+   ================================================================ */
+(function() {
+  var sections = [];
+  document.querySelectorAll('section[id], .section[id]').forEach(function(s) {
+    sections.push(s);
+  });
+  var links = document.querySelectorAll('.nav-links a[href^="#"]');
+
+  window.addEventListener('scroll', function() {
+    var current = '';
+    sections.forEach(function(s) {
+      if (s.getBoundingClientRect().top <= 80) current = s.id;
+    });
+    links.forEach(function(l) {
+      l.classList.remove('active');
+      if (l.getAttribute('href') === '#' + current) l.classList.add('active');
+    });
+  });
+})();
+</script>
 
 </body>
 </html>

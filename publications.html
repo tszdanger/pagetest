@@ -6,22 +6,22 @@
   <meta name="description" content="Publications — Zongjie Li">
   <title>Publications — Zongjie Li</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <span class="header-name">Zongjie Li</span>
-    <ul class="header-nav">
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-name">Zongjie Li</span>
+    <ul class="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="publications.html" class="active">Publications</a></li>
+      <li><a href="/#insights">Insights</a></li>
       <li><a href="https://scholar.google.com/citations?user=Sd8mmE0AAAAJ" target="_blank" rel="noopener">Scholar</a></li>
-      <li><a href="https://github.com/tszdanger" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
   </div>
-</header>
+</nav>
 
 <main class="main">
 
@@ -29,8 +29,8 @@
 
   <div class="pub-full">
 
-    <!-- 2026 -->
-    <div class="pub-year-block">
+    <!-- 2026 ========================================================== -->
+    <div class="pub-year-block reveal">
       <h2 class="pub-year-h">2026</h2>
 
       <div class="pub-row">
@@ -97,8 +97,8 @@
       </div>
     </div>
 
-    <!-- 2025 -->
-    <div class="pub-year-block">
+    <!-- 2025 ========================================================== -->
+    <div class="pub-year-block reveal">
       <h2 class="pub-year-h">2025</h2>
 
       <div class="pub-row">
@@ -107,6 +107,10 @@
           <p class="pub-title">Differentiation-Based Extraction of Proprietary Data from Fine-tuned LLMs</p>
           <p class="pub-authors"><strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang, Zhendong Su</p>
           <p class="pub-venue-name">ACM CCS 2025 <span class="ccf">CCF-A</span></p>
+          <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+            <span class="abs-arrow">▸</span> Abstract
+          </button>
+          <div class="abs-content"><div class="abs-text">The increasing demand for domain-specific and human-aligned Large Language Models (LLMs) has led to the widespread adoption of Supervised Fine-Tuning (SFT) techniques. SFT datasets often comprise valuable instruction-response pairs, making them highly valuable targets for potential extraction. This paper studies this critical research problem for the first time. We develop a novel extraction method specifically designed for SFT models, called Differentiated Data Extraction (DDE), which exploits the confidence levels of fine-tuned models and their behavioral differences from pre-trained base models. Through extensive experiments across multiple domains and scenarios, we demonstrate the feasibility of SFT data extraction using DDE.</div></div>
         </div>
       </div>
 
@@ -115,7 +119,11 @@
         <div class="pub-body">
           <p class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3720449" target="_blank" rel="noopener">API-guided Dataset Synthesis to Finetune Large Code Models</a></p>
           <p class="pub-authors"><strong>Zongjie Li</strong>, Daoyuan Wu, Shuai Wang, Zhendong Su</p>
-          <p class="pub-venue-name">OOPSLA 2025 <span class="ccf">CCF-A</span> &mdash; Singapore</p>
+          <p class="pub-venue-name">OOPSLA 2025 <span class="ccf">CCF-A</span> · Singapore</p>
+          <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+            <span class="abs-arrow">▸</span> Abstract
+          </button>
+          <div class="abs-content"><div class="abs-text">Large code models (LCMs), pre-trained on vast code corpora, have demonstrated remarkable performance across a wide array of code-related tasks. Supervised fine-tuning (SFT) plays a vital role in aligning these models with specific requirements. However, synthesizing high-quality SFT datasets poses a significant challenge due to the uneven quality of datasets and the scarcity of domain-specific datasets. We propose DataScope, an API-guided dataset synthesis framework designed to enhance the SFT process for LCMs in both general and domain-specific scenarios. Extensive experiments demonstrate DataScope's effectiveness, with models fine-tuned on its synthesized datasets outperforming those tuned on unoptimized datasets five times larger.</div></div>
         </div>
       </div>
 
@@ -174,8 +182,8 @@
       </div>
     </div>
 
-    <!-- 2024 -->
-    <div class="pub-year-block">
+    <!-- 2024 ========================================================== -->
+    <div class="pub-year-block reveal">
       <h2 class="pub-year-h">2024</h2>
 
       <div class="pub-row">
@@ -183,7 +191,11 @@
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/pdf/2303.03012.pdf" target="_blank" rel="noopener">On the Feasibility of Specialized Ability Extracting for Large Language Code Models</a></p>
           <p class="pub-authors"><strong>Zongjie Li</strong>, Chaozheng Wang, Pingchuan Ma, Chaowei Liu, Shuai Wang, Daoyuan Wu, Cuiyun Gao, Yang Liu</p>
-          <p class="pub-venue-name">ICSE 2024 <span class="ccf">CCF-A</span> &mdash; Lisbon, Portugal</p>
+          <p class="pub-venue-name">ICSE 2024 <span class="ccf">CCF-A</span> · Lisbon, Portugal</p>
+          <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+            <span class="abs-arrow">▸</span> Abstract
+          </button>
+          <div class="abs-content"><div class="abs-text">Recent advances in large language models (LLMs) significantly boost their usage in software engineering. However, training a well-performing LLM demands a substantial workforce for data collection and annotation. Moreover, training datasets may be proprietary or partially open, and the process often requires a costly GPU cluster. This motivates us to explore a practical and novel direction: slicing commercial black-box LLMs using medium-sized backbone models. We systematically investigate the effectiveness of launching code ability extraction attacks under different code-related tasks with multiple query schemes. Our results show promising outcomes, demonstrating that with a reasonable number of queries, attackers can train a medium-sized backbone model to replicate specialized code behaviors similar to the target LLMs.</div></div>
         </div>
       </div>
 
@@ -201,21 +213,29 @@
         <div class="pub-body">
           <p class="pub-title"><a href="https://arxiv.org/abs/2310.01432" target="_blank" rel="noopener">Split and Merge: Aligning Position Biases in LLM-based Evaluators</a></p>
           <p class="pub-authors"><strong>Zongjie Li</strong>, Chaozheng Wang, Pingchuan Ma, Daoyuan Wu, Shuai Wang, Cuiyun Gao, Yang Liu</p>
-          <p class="pub-venue-name">EMNLP 2024 &mdash; Miami, FL, USA</p>
+          <p class="pub-venue-name">EMNLP 2024 · Miami, FL, USA</p>
+          <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+            <span class="abs-arrow">▸</span> Abstract
+          </button>
+          <div class="abs-content"><div class="abs-text">Large language models (LLMs) have shown promise as automated evaluators for assessing the quality of answers generated by AI systems. However, these LLM-based evaluators exhibit position bias, or inconsistency, when used to evaluate candidate answers in pairwise comparisons. To address this limitation, we propose PORTIA, an alignment-based system designed to mimic human comparison strategies to calibrate position bias in a lightweight yet effective manner. Our results show that PORTIA markedly enhances the consistency rates for all the models and comparison forms tested, achieving an average relative improvement of 47.46%. Remarkably, PORTIA enables less advanced GPT models to achieve 88% agreement with the state-of-the-art GPT-4 model at just 10% of the cost.</div></div>
         </div>
       </div>
     </div>
 
-    <!-- 2023 -->
-    <div class="pub-year-block">
+    <!-- 2023 ========================================================== -->
+    <div class="pub-year-block reveal">
       <h2 class="pub-year-h">2023</h2>
 
       <div class="pub-row">
         <span class="pub-venue-tag">CCS</span>
         <div class="pub-body">
-          <p class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3576915.3623120" target="_blank" rel="noopener">Protecting Intellectual Property of Large Language Model-Based Code Generation APIs via Watermarks</a></p>
+          <p class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3576915.3623120" target="_blank" rel="noopener">Protecting Intellectual Property of LLM-Based Code Generation APIs via Watermarks</a></p>
           <p class="pub-authors"><strong>Zongjie Li</strong>, Chaozheng Wang, Shuai Wang, Cuiyun Gao</p>
-          <p class="pub-venue-name">ACM CCS 2023 <span class="ccf">CCF-A</span> &mdash; Copenhagen, Denmark</p>
+          <p class="pub-venue-name">ACM CCS 2023 <span class="ccf">CCF-A</span> · Copenhagen, Denmark</p>
+          <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+            <span class="abs-arrow">▸</span> Abstract
+          </button>
+          <div class="abs-content"><div class="abs-text">The rise of large language model-based code generation (LLCG) has enabled various commercial services and APIs. The risk of intellectual property (IP) theft over the LLCG models (e.g., via imitation attacks) has been a serious concern. In this paper, we propose the first watermark (WM) technique to protect LLCG APIs from remote imitation attacks. Our proposed technique is based on replacing tokens in an LLCG output with their "synonyms" available in the programming language. We design six WM schemes (instantiated into over 30 WM passes) which rely on conceptually distinct token synonyms available in programming languages. We evaluate our WM technique on LLCG models fine-tuned from CodeT5 and CodeBERT, showing effectiveness in both WM injection and IP check.</div></div>
         </div>
       </div>
 
@@ -225,6 +245,10 @@
           <p class="pub-title"><a href="https://ieeexplore.ieee.org/document/10400834" target="_blank" rel="noopener">Evaluating C/C++ Vulnerability Detectability of Query-Based SAST Tools</a></p>
           <p class="pub-authors"><strong>Zongjie Li</strong>, Zhibo Liu, Wai Kin Wong, Pingchuan Ma, Shuai Wang</p>
           <p class="pub-venue-name">IEEE TDSC 2023 <span class="ccf">CCF-A</span></p>
+          <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+            <span class="abs-arrow">▸</span> Abstract
+          </button>
+          <div class="abs-content"><div class="abs-text">In recent years, query-based static application security testing (Q-SAST) tools such as CodeQL have gained popularity due to their ability to codify vulnerability knowledge into SQL-like queries and search for vulnerabilities in the database derived from the software. We conduct the first in-depth study of Q-SAST to demystify their C/C++ vulnerability detectability. Our study uses a synthetic CWE test suite and a real-world CVE test suite, totaling almost 30K programs. We then gather defect-fixing pull requests to characterize historically-fixed defects. We design SAST-MT, a metamorphic testing framework to detect false positives and false negatives. We summarize lessons that benefit both users and developers of Q-SAST.</div></div>
         </div>
       </div>
 
@@ -233,7 +257,11 @@
         <div class="pub-body">
           <p class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1109/ICSE48619.2023.00110" target="_blank" rel="noopener">CCTEST: Testing and Repairing Code Completion Systems</a></p>
           <p class="pub-authors"><strong>Zongjie Li</strong>, Chaozheng Wang, Zhibo Liu, Haoxuan Wang, Dong Chen, Shuai Wang, Cuiyun Gao</p>
-          <p class="pub-venue-name">ICSE 2023 <span class="ccf">CCF-A</span> &mdash; Melbourne, Australia</p>
+          <p class="pub-venue-name">ICSE 2023 <span class="ccf">CCF-A</span> · Melbourne, Australia</p>
+          <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+            <span class="abs-arrow">▸</span> Abstract
+          </button>
+          <div class="abs-content"><div class="abs-text">Code completion, a highly valuable topic in the software development domain, has been increasingly promoted for use by recent advances in large language models (LLMs). To date, visible LLM-based code completion frameworks such as GitHub Copilot and GPT are trained using deep learning over vast quantities of unstructured text and open source code. In contrast to this flourishing market, we find that code completion systems often output suspicious results, and to date, an automated testing and enhancement framework for code completion systems is not available. This research proposes CCTEST, a framework to test and repair code completion systems in blackbox settings. We detected a total of 33,540 inputs (with a true positive rate of 86%) that can trigger erroneous cases from eight popular LLM-based code completion systems.</div></div>
         </div>
       </div>
 
@@ -265,16 +293,20 @@
       </div>
     </div>
 
-    <!-- 2022 -->
-    <div class="pub-year-block">
+    <!-- 2022 ========================================================== -->
+    <div class="pub-year-block reveal">
       <h2 class="pub-year-h">2022</h2>
 
       <div class="pub-row">
         <span class="pub-venue-tag">ICSE</span>
         <div class="pub-body">
-          <p class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3510003.3510217" target="_blank" rel="noopener">Unleashing the Power of Compiler Intermediate Representation to Enhance Neural Program Embeddings</a></p>
+          <p class="pub-title"><a href="https://dl.acm.org/doi/abs/10.1145/3510003.3510217" target="_blank" rel="noopener">Unleashing the Power of Compiler IR to Enhance Neural Program Embeddings</a></p>
           <p class="pub-authors"><strong>Zongjie Li</strong>, Pingchuan Ma, Huaijin Wang, Shuai Wang, Qiyi Tang, Sen Nie, Shi Wu</p>
-          <p class="pub-venue-name">ICSE 2022 <span class="ccf">CCF-A</span> &mdash; Pittsburgh, PA, USA</p>
+          <p class="pub-venue-name">ICSE 2022 <span class="ccf">CCF-A</span> · Pittsburgh, PA, USA</p>
+          <button class="abs-toggle" onclick="toggleAbstract(this)" aria-label="Toggle abstract">
+            <span class="abs-arrow">▸</span> Abstract
+          </button>
+          <div class="abs-content"><div class="abs-text">Neural program embeddings have demonstrated considerable promise in a range of program analysis tasks, including clone identification, program repair, code completion, and program synthesis. This paper takes a fresh look at how to improve program embeddings by leveraging compiler intermediate representation (IR). We first demonstrate simple yet highly effective methods for enhancing embedding quality by training embedding models alongside source code and LLVM IR generated by default optimization levels (e.g., -O2). We then introduce IRGen, a framework based on genetic algorithms (GA), to identify (near-)optimal sequences of optimization flags that can significantly improve embedding quality.</div></div>
         </div>
       </div>
 
@@ -297,8 +329,8 @@
       </div>
     </div>
 
-    <!-- 2021 -->
-    <div class="pub-year-block">
+    <!-- 2021 ========================================================== -->
+    <div class="pub-year-block reveal">
       <h2 class="pub-year-h">2021</h2>
 
       <div class="pub-row">
@@ -316,8 +348,31 @@
 </main>
 
 <footer class="site-footer">
-  Zongjie Li &middot; HKUST CSE &middot; zligo@connect.ust.hk
+  Zongjie Li · HKUST CSE · zligo@connect.ust.hk
 </footer>
+
+<script>
+function toggleAbstract(btn) {
+  var content = btn.nextElementSibling;
+  var arrow = btn.querySelector('.abs-arrow');
+  var isOpen = content.classList.contains('open');
+  content.classList.toggle('open');
+  btn.classList.toggle('open');
+  arrow.textContent = isOpen ? '▸' : '▾';
+}
+
+(function() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -30px 0px', threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+})();
+</script>
 
 </body>
 </html>
